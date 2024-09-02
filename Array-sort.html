@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- array sort nested loop  -->
+
+    <script>
+      let data = [40, 30, 15, 3, 70, 35, 2];
+      for (let i = 0; i < data.length; i++) {
+        for (let j = 0; j < data.length; j++) {
+          // if (data[j]>data[j +1]) {
+          //     let temp = data[j];
+          //     data[j] = data[j+1];
+          //     data[j+1] = temp;
+          // }
+
+          if (data[j] > data[i]) {
+            let temp = data[j];
+            data[j] = data[i];
+            data[i] = temp;
+          }
+        }
+      }
+      console.warn(data);
+    </script>
+  </body>
+</html>
